@@ -1,0 +1,85 @@
+<style is="custom-style">
+  .grouplistcontext a.border {
+    border: 1px var(--divider-color) solid;
+    margin: 0px -1px;
+  }
+  .grouplistcontext .listContainer > a {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    width: 100%
+  }
+  
+  .grouplistcontext .listContainer > a > * {
+    padding-left: 1em;
+  }
+  
+  .grouplistcontext .description > .itemIcon {
+    padding-top: 10px;
+  }
+  .grouplistcontext .description > .rightIcon {
+    padding-top: 10px;
+  }
+  
+  
+  .grouplistcontext{height: 100%;}
+        .grouplistcontext .items{
+            height: 100%;
+        }
+        .grouplistcontext .main{
+            height: 100%;
+            width: 100%;
+        }
+        
+      .grouplistcontext .bump-menu-open{
+      animation: 0.2s up;
+          bottom: 50px;
+        
+        height: 100%;
+          position: fixed;
+          top: 70%;
+          bottom: 0;
+          right: 0;
+          z-index: 99999;
+          display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      pointer-events: none;
+  }
+  
+  .grouplistcontext .bump-menu-open__up{
+      width: 25px;
+      height: 25px;
+      background-image: radial-gradient(circle at 0 0,rgba(204,0,0,0) 25px,var(--primary-color, #ff6251) 25px);
+      position: relative;
+      bottom: -1px;
+  }
+  
+  .grouplistcontext .bump-menu-open__container{
+      pointer-events: auto;
+      width: 50px;
+      height: 50px;
+      
+      background-color: var(--primary-color, #ff6251);
+    
+    
+      border-radius: 50% 0 0 50%;
+      bottom: 0px;
+    
+    display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .grouplistcontext .bump-menu-open__down{
+      width: 25px;
+      height: 25px;
+      background-image: radial-gradient(circle at 0 100%,rgba(204,0,0,0) 25px,var(--primary-color, #ff6251) 25px);
+      position: relative;
+      bottom: 1px;
+  }
+  </style>
+  
