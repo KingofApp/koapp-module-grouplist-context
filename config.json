@@ -1,13 +1,14 @@
+
 {
     "name": "Group list Context",
-    "identifier": "grouplistcontextcontext",
+    "identifier": "grouplistcontext",
     "description": {
         "es-ES": "Agrupa tu contenido para facilitar la búsqueda de información a través de este módulo. ",
         "en-US": "Group your content to facilitate the search for information by activating this module."
     },
     "documentation": {
-        "es-ES": "modules/grouplistcontext/documentation/es_ES.md",
-        "en-US": "modules/grouplistcontext/documentation/en_US.md"
+        "es-ES": "http://resources.kingofapp.com/modules/grouplistcontext/original/1.0.0/documentation/es_ES.md",
+        "en-US": "http://resources.kingofapp.com/modules/grouplistcontext/original/1.0.0/documentation/en_US.md"
     },
     "descriptionShort": {
         "es-ES": "Agrupa tu contenido para facilitar la búsqueda de información.",
@@ -18,29 +19,18 @@
     "canContain": true,
     "version": "1.0.0",
     "author": "King of App",
-    "category": [
-        "others", "menu"
-    ],
+    "category": ["others", "menu"],
     "price": 0,
     "subscription": false,
-    "platforms": [
-        "android",
-        "ios",
-        "windows"
-    ],
-    "view": "modules/grouplistcontext/index.html",
-    "files": [
-        "modules/grouplistcontext/controller.js",
-        "modules/grouplistcontext/styles.html"
-    ],
-    "libs": [
-        {
-            "bower": {
-                "PolymerElements/iron-flex-layout": "^1.0.0"
-            },
-            "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
-        }
-    ],
+    "platforms": ["android", "ios", "windows"],
+    "view": "http://resources.kingofapp.com/modules/grouplistcontext/original/1.0.0/index.html",
+    "files": ["http://resources.kingofapp.com/modules/grouplistcontext/original/1.0.0/controller.js", "http://resources.kingofapp.com/modules/grouplistcontext/original/1.0.0/styles.html"],
+    "libs": [{
+        "bower": {
+            "PolymerElements/iron-flex-layout": "^1.0.0"
+        },
+        "src": "http://resources.kingofapp.com/bower_components/iron-flex-layout/iron-flex-layout.html"
+    }],
     "scope": {
         "menuItems": [],
         "separation": "1px",
@@ -49,106 +39,91 @@
         "showIcon": false,
         "showDescription": false
     },
-    "config": [
-        {
-            "type": "repeatSection",
-            "key": "menuItems",
-            "templateOptions": {
-                "label": "Items",
-                "btnText": "Add another item to the menu",
-                "fields": [
-                    {
-                        "type": "select",
-                        "key": "path",
-                        "templateOptions": {
-                            "label": "Path",
-                            "required": true
-                        }
-                    },
-                    {
-                        "type": "input",
-                        "key": "description",
-                        "templateOptions": {
-                            "label": "Description",
-                            "placeholder": "(Optional)"
-                        }
-                    },
-                    {
-                        "type": "input",
-                        "key": "bgImage",
-                        "templateOptions": {
-                            "label": "Background Image URL",
-                            "placeholder": "(Optional)"
-                        }
-                    },
-                    {
-                        "type": "input",
-                        "key": "bgColor",
-                        "templateOptions": {
-                            "label": "Background Color",
-                            "placeholder": "(Optional)"
-                        }
-                    }
-
-                ]
-            }
-        },
-        {
-            "templateOptions": {
-                "label": "Margin",
-                "maxlength": 5,
-                "required": true,
-                "description": "Margin between items (px,%)"
-            },
-            "type": "input",
-            "key": "separation"
-        },
-        {
-            "type": "checkbox",
-            "key": "border",
-            "templateOptions": {
-                "description": "Item borders",
-                "label": "Border"
-            }
-        },
-        {
-            "type": "checkbox",
-            "key": "showText",
-            "templateOptions": {
-                "description": "Item text",
-                "label": "Show text"
-            }
-        },
-        {
-            "type": "checkbox",
-            "key": "showDescription",
-            "templateOptions": {
-                "description": "Item description",
-                "label": "Show Description"
-            }
-        },
-        {
-            "type": "checkbox",
-            "key": "showIcon",
-            "templateOptions": {
-                "description": "Item icon",
-                "label": "Show icon"
-            }
+    "config": [{
+        "type": "repeatSection",
+        "key": "menuItems",
+        "templateOptions": {
+            "label": "Items",
+            "btnText": "Add another item to the menu",
+            "fields": [{
+                "type": "select",
+                "key": "path",
+                "templateOptions": {
+                    "label": "Path",
+                    "required": true
+                }
+            }, {
+                "type": "input",
+                "key": "description",
+                "templateOptions": {
+                    "label": "Description",
+                    "placeholder": "(Optional)"
+                }
+            }, {
+                "type": "input",
+                "key": "bgImage",
+                "templateOptions": {
+                    "label": "Background Image URL",
+                    "placeholder": "(Optional)"
+                }
+            }, {
+                "type": "input",
+                "key": "bgColor",
+                "templateOptions": {
+                    "label": "Background Color",
+                    "placeholder": "(Optional)"
+                }
+            }]
         }
-    ],
+    }, {
+        "templateOptions": {
+            "label": "Margin",
+            "maxlength": 5,
+            "required": true,
+            "description": "Margin between items (px,%)"
+        },
+        "type": "input",
+        "key": "separation"
+    }, {
+        "type": "checkbox",
+        "key": "border",
+        "templateOptions": {
+            "description": "Item borders",
+            "label": "Border"
+        }
+    }, {
+        "type": "checkbox",
+        "key": "showText",
+        "templateOptions": {
+            "description": "Item text",
+            "label": "Show text"
+        }
+    }, {
+        "type": "checkbox",
+        "key": "showDescription",
+        "templateOptions": {
+            "description": "Item description",
+            "label": "Show Description"
+        }
+    }, {
+        "type": "checkbox",
+        "key": "showIcon",
+        "templateOptions": {
+            "description": "Item icon",
+            "label": "Show icon"
+        }
+    }],
     "showOn": {
         "menu": true,
         "market": true,
         "dragDrop": true
     },
     "images": {
-        "list": "modules/grouplistcontext/images/grouplistcontext_list.png",
-        "screenshots": [
-            "modules/grouplistcontext/images/grouplistcontext_screenshots01.png",
-            "modules/grouplistcontext/images/grouplistcontext_screenshots02.png"
-        ],
-        "popover": "modules/grouplistcontext/images/grouplistcontext_popover.png",
-        "banner": "modules/grouplistcontext/images/grouplistcontext_popover.png",
-        "logo": "modules/grouplistcontext/images/grouplistcontext_logo.png"
+        "list": "http://resources.kingofapp.com/modules/grouplistcontext/original/1.0.10/images/grouplist_list.png",
+        "screenshots": ["http://resources.kingofapp.com/modules/grouplistcontext/original/1.0.10/images/grouplist_screenshots01.png", "http://resources.kingofapp.com/modules/grouplistcontext/original/1.0.10/images/grouplist_screenshots02.png"],
+        "popover": "http://resources.kingofapp.com/modules/grouplistcontext/original/1.0.10/images/grouplist_popover.png",
+        "banner": "http://resources.kingofapp.com/modules/grouplistcontext/original/1.0.10/images/grouplist_popover.png",
+        "logo": "http://resources.kingofapp.com/modules/grouplistcontext/original/1.0.10/images/grouplist_logo.png"
     }
+    
 }
